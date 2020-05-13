@@ -3,26 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="">
+
     <title>neuefische-Blog</title>
+
   </head>
-  <body>
+
+  <!-- BODY -->
+  <body class="">
     <!-- HEADER -->
-    <header>
-      <img
-        src="/img/neuefische-gmbh-logo.svg"
-        alt="blauer neuefische schriftzug"
-      />
-      <h1>neuefische Blog</h1>
+    <header class="">
+      <div>
+        <img src="/img/neuefische-gmbh-logo.svg" alt="blauer neuefische schriftzug"/>
+      </div>
+      <div>
+        <h1>neuefische Blog</h1>
+      </div>
       <nav>
         <a href="#articles">articles</a>
         <a href="#imprint">imprint</a>
         </ul>
       </nav>
     </header>
-    <!-- /HEADER -->
 
     <!-- MAIN -->
     <main id="articles">
+
       <!-- ARTICLE -->
       <article>
         <h2>HTML</h2>
@@ -63,6 +71,31 @@
           laborum ipsum architecto beatae culpa eveniet modi aperiam quod.
           Molestias in ea repellendus adipisci laborum!
         </p>
+
+        <!-- FORM TO COMMENT -->
+        <form action="" method="">
+          <div>
+            <label>Name:
+              <input type="text" name="" id="name" placeholder="Vor- und Nachnahme" required>
+            </label>
+          </div>
+          <div>
+            <label>Comments go here
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+          <div>
+            <input type="submit" value="send">
+          </div>
+        </form>
+        
+        <p>
+          Saepe sequi unde consectetur adipisci repellendus nulla dolores,
+          alias, ullam a quia nesciunt dolorum exercitationem, facere optio
+          itaque earum! Debitis neque fugiat ipsa doloribus, quo corrupti
+        </p>
+
+        
         <!-- ASIDE -->
         <aside>
           <h3>Author</h3>
@@ -78,16 +111,15 @@
             <li><a href="http://" target="_blank" rel="noopener noreferrer">article 3</a></li>
           </ul>
         </aside>
-        <!-- /ASIDE -->
+        
       </article>
-      <!-- /ARTICLE -->
+      
     </main>
-    <!-- /MAIN -->
 
     <!-- FOOTER -->
     <footer id="imprint">
       <p>&copy; neuefische GmbH</p>
     </footer>
-    <!-- /FOOTER -->
+   
   </body>
 </html>
