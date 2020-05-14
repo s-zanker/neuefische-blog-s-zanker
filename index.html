@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="">
-
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script defer src="/js/jquery-3.5.1.min.js"></script>
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
     <title>neuefische-Blog</title>
-
   </head>
 
   <!-- BODY -->
-  <body class="">
+  <body class="container">
     <!-- HEADER -->
-    <header class="">
-      <div>
-        <img src="/img/neuefische-gmbh-logo.svg" alt="blauer neuefische schriftzug"/>
+    <header class="row mt-5">
+      <div class="col-3 bg-danger">
+        <img
+          src="/img/neuefische-gmbh-logo.svg"
+          alt="blauer neuefische schriftzug"
+        />
       </div>
-      <div>
+      <div class="col=2">
         <h1>neuefische Blog</h1>
       </div>
-      <nav>
+      <nav class="col">
         <a href="#articles">articles</a>
         <a href="#imprint">imprint</a>
-        </ul>
       </nav>
     </header>
 
     <!-- MAIN -->
-    <main id="articles">
-
+    <main id="articles" class="row mt-5">
       <!-- ARTICLE -->
-      <article>
+      <article class="col-8">
         <h2>HTML</h2>
         <h3>The art of sectioning</h3>
         <p>
@@ -72,54 +73,71 @@
           Molestias in ea repellendus adipisci laborum!
         </p>
 
-        <!-- FORM TO COMMENT -->
-        <form action="" method="">
-          <div>
-            <label>Name:
-              <input type="text" name="" id="name" placeholder="Vor- und Nachnahme" required>
-            </label>
-          </div>
-          <div>
-            <label>Comments go here
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label>
-          </div>
-          <div>
-            <input type="submit" value="send">
-          </div>
-        </form>
-        
-        <p>
-          Saepe sequi unde consectetur adipisci repellendus nulla dolores,
-          alias, ullam a quia nesciunt dolorum exercitationem, facere optio
-          itaque earum! Debitis neque fugiat ipsa doloribus, quo corrupti
-        </p>
-
-        
         <!-- ASIDE -->
-        <aside>
+        <aside class="col">
           <h3>Author</h3>
           <h4>Luke Skywalker</h4>
-          <img 
-            src="img/author.jpeg" 
-            alt="Author blickt auf einen See" 
-          />
+          <img src="img/author.jpeg" alt="Author blickt auf einen See" />
           <h4>Further articles</h4>
-          <ul><!-- Emmet Befehl: ul>li*3>a:blank -->
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">article 1</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">article 2</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">article 3</a></li>
+          <ul>
+            <!-- Emmet Befehl: ul>li*3>a:blank -->
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >article 1</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >article 2</a
+              >
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                >article 3</a
+              >
+            </li>
           </ul>
         </aside>
-        
+
+        <section>
+          <!-- COMMENTS -->
+
+          <form action="" method="">
+            <div>
+              <label
+                >Name:
+                <input
+                  type="text"
+                  name=""
+                  id="name"
+                  placeholder="Vor- und Nachnahme"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label
+                >Comments go here
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </label>
+            </div>
+            <div>
+              <input type="submit" value="send" />
+            </div>
+          </form>
+
+          <p>
+            Saepe sequi unde consectetur adipisci repellendus nulla dolores,
+            alias, ullam a quia nesciunt dolorum exercitationem, facere optio
+            itaque earum! Debitis neque fugiat ipsa doloribus, quo corrupti
+          </p>
+        </section>
       </article>
-      
     </main>
 
     <!-- FOOTER -->
     <footer id="imprint">
       <p>&copy; neuefische GmbH</p>
     </footer>
-   
   </body>
 </html>
