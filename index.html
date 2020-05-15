@@ -4,77 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+
+    <!-- Bootstrap JS, just in case -->
     <script defer src="/js/jquery-3.5.1.min.js"></script>
     <script defer src="/js/bootstrap.bundle.min.js"></script>
+
     <title>neuefische-Blog</title>
   </head>
 
   <!-- BODY -->
-  <body class="container">
+  <body class="container mt-5">
     <!-- HEADER -->
-    <header class="row mt-5">
-      <div class="col-3 bg-danger">
+    <header
+      class="text-white d-flex flex-column align-items-center flex-md-row justify-content-between align-items-md-end p-2 bg-warning"
+    >
+      <!-- Logo -->
+      <div class="bg-warning">
         <img
           src="/img/neuefische-gmbh-logo.svg"
           alt="blauer neuefische schriftzug"
         />
       </div>
-      <div class="col=2">
+      <!-- Titel -->
+      <div class="bg-warning">
         <h1>neuefische Blog</h1>
       </div>
-      <nav class="col">
+      <!-- Navigation -->
+      <nav class="bg-warning">
         <a href="#articles">articles</a>
         <a href="#imprint">imprint</a>
       </nav>
     </header>
 
     <!-- MAIN -->
-    <main id="articles" class="row mt-5">
+    <main class="mt-5" id="articles">
       <!-- ARTICLE -->
-      <article class="col-8">
-        <h2>HTML</h2>
-        <h3>The art of sectioning</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          eius explicabo saepe vitae hic. Voluptatibus quas illo ipsa ullam
-          commodi placeat laborum reiciendis quis rerum labore aperiam
-          aspernatur debitis, cum hic ea ab animi fugit sequi cumque repellat
-          doloribus! Hic labore officiis temporibus voluptatibus expedita velit
-          a minus veritatis harum, laboriosam voluptate molestias, optio nobis
-          facilis sint? Sapiente, esse sequi?
-        </p>
-        <p>
-          Vero saepe maxime exercitationem laudantium nam doloribus iure ipsum
-          quas voluptas ratione minus voluptates eligendi quo qui voluptate,
-          veniam modi aliquid dolorem officiis delectus alias! Excepturi modi
-          assumenda eius vel molestias alias facere, qui placeat veritatis
-          officiis illo corporis tenetur suscipit dolores dolore ad amet
-          delectus totam eos deserunt vero. Tempore molestiae temporibus
-          adipisci consequatur repellendus provident explicabo numquam aperiam?
-        </p>
-        <p>
-          Quod reprehenderit cupiditate distinctio, ipsa, repudiandae eum a
-          dolor quisquam consectetur illo quas nisi aut autem illum voluptas
-          saepe rerum dolorem animi qui exercitationem atque ullam? Nam
-          architecto inventore nihil error maxime impedit optio dicta, magnam
-          eveniet exercitationem officia cum ducimus obcaecati repellendus
-          repudiandae eius doloremque voluptatem nulla quam est, labore in
-          deleniti veritatis vitae? Consectetur beatae earum vero illum.
-        </p>
-        <p>
-          Saepe sequi unde consectetur adipisci repellendus nulla dolores,
-          alias, ullam a quia nesciunt dolorum exercitationem, facere optio
-          itaque earum! Debitis neque fugiat ipsa doloribus, quo corrupti
-          provident velit tempore autem atque est officiis sunt sint reiciendis,
-          alias nihil totam? Rerum possimus, laboriosam debitis quaerat itaque
-          laborum ipsum architecto beatae culpa eveniet modi aperiam quod.
-          Molestias in ea repellendus adipisci laborum!
-        </p>
+      <article class="border border-dark">
+        <!-- Blog Post-->
+        <section class="border border-dark">
+          <h2>HTML</h2>
+          <h3>The art of sectioning</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis eius explicabo saepe vitae hic. Voluptatibus quas illo
+            ipsa ullam commodi placeat laborum reiciendis quis rerum labore
+            aperiam aspernatur debitis, cum hic ea ab animi fugit sequi cumque
+            repellat doloribus! Hic labore officiis temporibus voluptatibus
+            expedita velit a minus veritatis harum, laboriosam voluptate
+            molestias, optio nobis facilis sint? Sapiente, esse sequi?
+          </p>
+          <p>
+            Vero saepe maxime exercitationem laudantium nam doloribus iure ipsum
+            quas voluptas ratione minus voluptates eligendi quo qui voluptate,
+            veniam modi aliquid dolorem officiis delectus alias! Excepturi modi
+            assumenda eius vel molestias alias facere, qui placeat veritatis
+            officiis illo corporis tenetur suscipit dolores dolore ad amet
+            delectus totam eos deserunt vero. Tempore molestiae temporibus
+            adipisci consequatur repellendus provident explicabo numquam
+            aperiam?
+          </p>
+          <p>
+            Quod reprehenderit cupiditate distinctio, ipsa, repudiandae eum a
+            dolor quisquam consectetur illo quas nisi aut autem illum voluptas
+            saepe rerum dolorem animi qui exercitationem atque ullam? Nam
+            architecto inventore nihil error maxime impedit optio dicta, magnam
+            eveniet exercitationem officia cum ducimus obcaecati repellendus
+            repudiandae eius doloremque voluptatem nulla quam est, labore in
+            deleniti veritatis vitae? Consectetur beatae earum vero illum.
+          </p>
+        </section>
 
-        <!-- ASIDE -->
-        <aside class="col">
+        <!-- Author -->
+        <aside class="border border-dark"">
           <h3>Author</h3>
           <h4>Luke Skywalker</h4>
           <img src="img/author.jpeg" alt="Author blickt auf einen See" />
@@ -99,10 +102,10 @@
           </ul>
         </aside>
 
+        <!-- Comments -->
         <section>
-          <!-- COMMENTS -->
-
-          <form action="" method="">
+          <h3>Leave a Comment</h3>
+          <form>
             <div>
               <label
                 >Name:
@@ -117,26 +120,20 @@
             </div>
             <div>
               <label
-                >Comments go here
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                >
+                <textarea name="" id="" cols="30" rows="10">Comments go here</textarea>
               </label>
             </div>
             <div>
               <input type="submit" value="send" />
             </div>
           </form>
-
-          <p>
-            Saepe sequi unde consectetur adipisci repellendus nulla dolores,
-            alias, ullam a quia nesciunt dolorum exercitationem, facere optio
-            itaque earum! Debitis neque fugiat ipsa doloribus, quo corrupti
-          </p>
         </section>
       </article>
     </main>
 
     <!-- FOOTER -->
-    <footer id="imprint">
+    <footer id="imprint" class="bg-warning">
       <p>&copy; neuefische GmbH</p>
     </footer>
   </body>
